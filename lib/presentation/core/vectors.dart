@@ -1,0 +1,55 @@
+class AppVectors {
+  AppVectors._();
+
+  static const _baseSvg = 'assets/vectors/svg/';
+  static const _basePng = 'assets/vectors/png/';
+  static const logoWithText = _baseSvg + 'logo_with_text.svg';
+  static const logo = _baseSvg + 'logo.svg';
+  static const ddd_sample = _baseSvg + 'ddd_sample.svg';
+  static const hidePassword = _baseSvg + 'hide_password.svg';
+  static const showPassword = _baseSvg + 'show-password.svg';
+  static const back = _baseSvg + 'chevron_left.svg';
+  static const chevronDown = _baseSvg + 'chevron_down.svg';
+  static const exit = _baseSvg + 'exit.svg';
+  static const check = _baseSvg + 'check.svg';
+  static const notFound = _baseSvg + 'not-found.svg';
+  static const search = _baseSvg + 'search.svg';
+  static const calender = _baseSvg + 'calender.svg';
+  static const camera = _baseSvg + 'camera.svg';
+  static const star = _baseSvg + 'star.svg';
+  static const image = _baseSvg + 'image.svg';
+  static const circleQuestion = _baseSvg + 'circle_question.svg';
+  static const link = _baseSvg + 'link.svg';
+  static const upload = _baseSvg + 'upload.svg';
+  static const delete = _baseSvg + 'delete.svg';
+  static const whatsApp = _baseSvg + 'whatsapp.svg';
+  static const instagramLogo = _baseSvg + 'Instagram_logo.svg';
+
+  static const dashboard = _baseSvg + 'dashboard.svg';
+  static const myCatalog = _baseSvg + 'my_catalog.svg';
+  static const hireInfluencers = _baseSvg + 'hire_influencers.svg';
+  static const hireActionIcon = _baseSvg + 'hire_action.svg';
+  static const orderReceived = _baseSvg + 'order_received.svg';
+  static const reports = _baseSvg + 'reports.svg';
+  static const settings = _baseSvg + 'settings.svg';
+  static const referAndEarn = _baseSvg + 'refer_and_earn.svg';
+  static const notification = _baseSvg + 'notification.svg';
+  static const social = _baseSvg + 'social.svg';
+  static const sales = _baseSvg + 'sales.svg';
+  static const eShop = _baseSvg + 'e_shop.svg';
+  static const rightArrow = _baseSvg + 'right_arrow.svg';
+  static const earning = _baseSvg + 'earnings.svg';
+  static const logout = _baseSvg + 'logout.svg';
+  static const edit = _baseSvg + 'edit.svg';
+  static const myInvites = _baseSvg + 'invites.svg';
+  static const accepted = _baseSvg + 'accepted.svg';
+  static const filter = _baseSvg + 'filter.svg';
+  static const location = _baseSvg + 'location.svg';
+  static const youtube = _baseSvg + 'youtube.svg';
+  static const twitter = _baseSvg + 'twitter.svg';
+  static const instagram = _baseSvg + 'instagram.svg';
+  static const tiktok = _baseSvg + 'tiktok.svg';
+  static const facebook = _baseSvg + 'facebook.svg';
+  static const tag = _baseSvg + 'tag.svg';
+  static const campaigns = _baseSvg + 'campaigns.svg';
+}
