@@ -56,10 +56,3 @@ class InfluencerDetails with _$InfluencerDetails {
       _$InfluencerDetailsFromJson(json);
 }
 
-// @freezed
-// class LoginResponseData with _$LoginResponseData{
-//   factory LoginResponseData() = _LoginResponseData;
-//
-//   factory LoginResponseData.fromJson(Map<String, dynamic> json) =>
-//       _$LoginResponseDataFromJson(json);
-// }

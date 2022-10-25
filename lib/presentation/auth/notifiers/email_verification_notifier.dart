@@ -64,7 +64,7 @@ class EmailVerificationNotifier extends StateNotifier<EmailVerificationState> {
     state = EmailVerificationLoading();
     SendOTP sendOTP = SendOTP(repository);
     (await sendOTP(OTPModel(
-            email: email, otp: otp, deviceType: 1, deviceToken: 'sdkj')))
+            email: email, otp: otp,  deviceToken: 'test fcm token')))
         .fold((l) {
       String errorMessage = ''; //todo fix
       if (l is BadRequest) {
@@ -85,7 +85,6 @@ class EmailVerificationNotifier extends StateNotifier<EmailVerificationState> {
       if (response is InfluencerLoginResponseModel) {
         (await saveUserType(UserType.influencer)).fold((l) => null, (r) {
           ref.read(influencerProvider.state).state = response.userDataModel;
-
           context.router.push(const InfluencerWelcomeRoute());
         });
       } else if (response is BusinessLoginResponseModel) {

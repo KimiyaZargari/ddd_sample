@@ -12,17 +12,8 @@ class SignUpResponseModel with _$SignUpResponseModel {
     required String? email,
     required String token,
     required String? avatar,
-    //todo add later
   }) = _SignUpResponseModel;
 
   factory SignUpResponseModel.fromJson(Map<String, dynamic> json) =>
       _$SignUpResponseModelFromJson(json);
 }
-
-// @freezed
-// class LoginResponseData with _$LoginResponseData{
-//   factory LoginResponseData() = _LoginResponseData;
-//
-//   factory LoginResponseData.fromJson(Map<String, dynamic> json) =>
-//       _$LoginResponseDataFromJson(json);
-// }

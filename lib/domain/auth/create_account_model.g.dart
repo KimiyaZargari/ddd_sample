@@ -11,7 +11,7 @@ _$_CreateAccountModel _$$_CreateAccountModelFromJson(
     _$_CreateAccountModel(
       email: json['email'] as String,
       password: json['password'] as String,
-      referralCode: json['referal_code'] as String?,
+      referralCode: json['referralCode'] as String?,
     );
 
 Map<String, dynamic> _$$_CreateAccountModelToJson(
@@ -19,5 +19,5 @@ Map<String, dynamic> _$$_CreateAccountModelToJson(
     <String, dynamic>{
       'email': instance.email,
       'password': instance.password,
-      'referal_code': instance.referralCode,
+      'referralCode': instance.referralCode,
     };

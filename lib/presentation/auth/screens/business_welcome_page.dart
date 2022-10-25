@@ -1,12 +1,12 @@
-import 'package:flutter/material.dart';
-import 'package:ddd_sample/domain/auth/business_login_response_model.dart';
+import 'package:auto_route/auto_route.dart';
 import 'package:ddd_sample/presentation/core/images.dart';
 import 'package:ddd_sample/presentation/core/strings.dart';
 import 'package:ddd_sample/presentation/core/widgets/app_button.dart';
 import 'package:ddd_sample/presentation/core/widgets/page_base.dart';
-import 'package:auto_route/auto_route.dart';
 import 'package:ddd_sample/presentation/routes/router.gr.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
 import '../../../infrastructure/core/local_storage.dart';
 import '../../core/widgets/default_app_bar.dart';
 

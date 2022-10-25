@@ -23,9 +23,7 @@ class _$CreateAccountModelTearOff {
   const _$CreateAccountModelTearOff();
 
   _CreateAccountModel call(
-      {required String email,
-      required String password,
-      @JsonKey(name: 'referal_code') String? referralCode}) {
+      {required String email, required String password, String? referralCode}) {
     return _CreateAccountModel(
       email: email,
       password: password,
@@ -45,7 +43,6 @@ const $CreateAccountModel = _$CreateAccountModelTearOff();
 mixin _$CreateAccountModel {
   String get email => throw _privateConstructorUsedError;
   String get password => throw _privateConstructorUsedError;
-  @JsonKey(name: 'referal_code')
   String? get referralCode => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -59,10 +56,7 @@ abstract class $CreateAccountModelCopyWith<$Res> {
   factory $CreateAccountModelCopyWith(
           CreateAccountModel value, $Res Function(CreateAccountModel) then) =
       _$CreateAccountModelCopyWithImpl<$Res>;
-  $Res call(
-      {String email,
-      String password,
-      @JsonKey(name: 'referal_code') String? referralCode});
+  $Res call({String email, String password, String? referralCode});
 }
 
 /// @nodoc
@@ -104,10 +98,7 @@ abstract class _$CreateAccountModelCopyWith<$Res>
           _CreateAccountModel value, $Res Function(_CreateAccountModel) then) =
       __$CreateAccountModelCopyWithImpl<$Res>;
   @override
-  $Res call(
-      {String email,
-      String password,
-      @JsonKey(name: 'referal_code') String? referralCode});
+  $Res call({String email, String password, String? referralCode});
 }
 
 /// @nodoc
@@ -148,9 +139,7 @@ class __$CreateAccountModelCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_CreateAccountModel implements _CreateAccountModel {
   _$_CreateAccountModel(
-      {required this.email,
-      required this.password,
-      @JsonKey(name: 'referal_code') this.referralCode});
+      {required this.email, required this.password, this.referralCode});
 
   factory _$_CreateAccountModel.fromJson(Map<String, dynamic> json) =>
       _$$_CreateAccountModelFromJson(json);
@@ -160,7 +149,6 @@ class _$_CreateAccountModel implements _CreateAccountModel {
   @override
   final String password;
   @override
-  @JsonKey(name: 'referal_code')
   final String? referralCode;
 
   @override
@@ -199,10 +187,9 @@ class _$_CreateAccountModel implements _CreateAccountModel {
 
 abstract class _CreateAccountModel implements CreateAccountModel {
   factory _CreateAccountModel(
-          {required String email,
-          required String password,
-          @JsonKey(name: 'referal_code') String? referralCode}) =
-      _$_CreateAccountModel;
+      {required String email,
+      required String password,
+      String? referralCode}) = _$_CreateAccountModel;
 
   factory _CreateAccountModel.fromJson(Map<String, dynamic> json) =
       _$_CreateAccountModel.fromJson;
@@ -212,7 +199,6 @@ abstract class _CreateAccountModel implements CreateAccountModel {
   @override
   String get password;
   @override
-  @JsonKey(name: 'referal_code')
   String? get referralCode;
   @override
   @JsonKey(ignore: true)

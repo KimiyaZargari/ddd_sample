@@ -25,12 +25,10 @@ class _$OTPModelTearOff {
   _OTPModel call(
       {required String email,
       required String otp,
-      @JsonKey(name: 'device_type') required int deviceType,
       @JsonKey(name: 'device_token') required String deviceToken}) {
     return _OTPModel(
       email: email,
       otp: otp,
-      deviceType: deviceType,
       deviceToken: deviceToken,
     );
   }
@@ -47,8 +45,6 @@ const $OTPModel = _$OTPModelTearOff();
 mixin _$OTPModel {
   String get email => throw _privateConstructorUsedError;
   String get otp => throw _privateConstructorUsedError;
-  @JsonKey(name: 'device_type')
-  int get deviceType => throw _privateConstructorUsedError;
   @JsonKey(name: 'device_token')
   String get deviceToken => throw _privateConstructorUsedError;
 
@@ -65,7 +61,6 @@ abstract class $OTPModelCopyWith<$Res> {
   $Res call(
       {String email,
       String otp,
-      @JsonKey(name: 'device_type') int deviceType,
       @JsonKey(name: 'device_token') String deviceToken});
 }
 
@@ -81,7 +76,6 @@ class _$OTPModelCopyWithImpl<$Res> implements $OTPModelCopyWith<$Res> {
   $Res call({
     Object? email = freezed,
     Object? otp = freezed,
-    Object? deviceType = freezed,
     Object? deviceToken = freezed,
   }) {
     return _then(_value.copyWith(
@@ -93,10 +87,6 @@ class _$OTPModelCopyWithImpl<$Res> implements $OTPModelCopyWith<$Res> {
           ? _value.otp
           : otp // ignore: cast_nullable_to_non_nullable
               as String,
-      deviceType: deviceType == freezed
-          ? _value.deviceType
-          : deviceType // ignore: cast_nullable_to_non_nullable
-              as int,
       deviceToken: deviceToken == freezed
           ? _value.deviceToken
           : deviceToken // ignore: cast_nullable_to_non_nullable
@@ -113,7 +103,6 @@ abstract class _$OTPModelCopyWith<$Res> implements $OTPModelCopyWith<$Res> {
   $Res call(
       {String email,
       String otp,
-      @JsonKey(name: 'device_type') int deviceType,
       @JsonKey(name: 'device_token') String deviceToken});
 }
 
@@ -130,7 +119,6 @@ class __$OTPModelCopyWithImpl<$Res> extends _$OTPModelCopyWithImpl<$Res>
   $Res call({
     Object? email = freezed,
     Object? otp = freezed,
-    Object? deviceType = freezed,
     Object? deviceToken = freezed,
   }) {
     return _then(_OTPModel(
@@ -142,10 +130,6 @@ class __$OTPModelCopyWithImpl<$Res> extends _$OTPModelCopyWithImpl<$Res>
           ? _value.otp
           : otp // ignore: cast_nullable_to_non_nullable
               as String,
-      deviceType: deviceType == freezed
-          ? _value.deviceType
-          : deviceType // ignore: cast_nullable_to_non_nullable
-              as int,
       deviceToken: deviceToken == freezed
           ? _value.deviceToken
           : deviceToken // ignore: cast_nullable_to_non_nullable
@@ -160,7 +144,6 @@ class _$_OTPModel implements _OTPModel {
   _$_OTPModel(
       {required this.email,
       required this.otp,
-      @JsonKey(name: 'device_type') required this.deviceType,
       @JsonKey(name: 'device_token') required this.deviceToken});
 
   factory _$_OTPModel.fromJson(Map<String, dynamic> json) =>
@@ -171,15 +154,12 @@ class _$_OTPModel implements _OTPModel {
   @override
   final String otp;
   @override
-  @JsonKey(name: 'device_type')
-  final int deviceType;
-  @override
   @JsonKey(name: 'device_token')
   final String deviceToken;
 
   @override
   String toString() {
-    return 'OTPModel(email: $email, otp: $otp, deviceType: $deviceType, deviceToken: $deviceToken)';
+    return 'OTPModel(email: $email, otp: $otp, deviceToken: $deviceToken)';
   }
 
   @override
@@ -190,8 +170,6 @@ class _$_OTPModel implements _OTPModel {
             const DeepCollectionEquality().equals(other.email, email) &&
             const DeepCollectionEquality().equals(other.otp, otp) &&
             const DeepCollectionEquality()
-                .equals(other.deviceType, deviceType) &&
-            const DeepCollectionEquality()
                 .equals(other.deviceToken, deviceToken));
   }
 
@@ -200,7 +178,6 @@ class _$_OTPModel implements _OTPModel {
       runtimeType,
       const DeepCollectionEquality().hash(email),
       const DeepCollectionEquality().hash(otp),
-      const DeepCollectionEquality().hash(deviceType),
       const DeepCollectionEquality().hash(deviceToken));
 
   @JsonKey(ignore: true)
@@ -218,7 +195,6 @@ abstract class _OTPModel implements OTPModel {
   factory _OTPModel(
           {required String email,
           required String otp,
-          @JsonKey(name: 'device_type') required int deviceType,
           @JsonKey(name: 'device_token') required String deviceToken}) =
       _$_OTPModel;
 
@@ -228,9 +204,6 @@ abstract class _OTPModel implements OTPModel {
   String get email;
   @override
   String get otp;
-  @override
-  @JsonKey(name: 'device_type')
-  int get deviceType;
   @override
   @JsonKey(name: 'device_token')
   String get deviceToken;

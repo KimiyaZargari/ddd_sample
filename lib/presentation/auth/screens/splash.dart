@@ -20,7 +20,7 @@ class SplashPage extends StatelessWidget {
         notifier.loadData(ref);
       }
       ref.listen(splashNotifierProvider, (previous, next) {
-        if (next is NoLogin) {
+        if (next is NotLoggedIn) {
           context.router.replace(LoginRoute());
         } else if (next is BusinessLoggedIn) {
           context.router.replace(BusinessWelcomeRoute());

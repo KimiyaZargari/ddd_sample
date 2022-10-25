@@ -9,7 +9,6 @@ class OTPModel with _$OTPModel {
   factory OTPModel({
     required String email,
     required String otp,
-    @JsonKey(name: 'device_type') required int deviceType,
     @JsonKey(name: 'device_token') required String deviceToken,
   }) = _OTPModel;
 

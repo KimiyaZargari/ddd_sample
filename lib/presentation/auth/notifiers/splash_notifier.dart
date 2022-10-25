@@ -18,8 +18,8 @@ class SplashLoading extends SplashState {
   SplashLoading();
 }
 
-class NoLogin extends SplashState {
-  NoLogin();
+class NotLoggedIn extends SplashState {
+  NotLoggedIn();
 }
 
 class BusinessLoggedIn extends SplashState {
@@ -42,7 +42,7 @@ class SplashNotifier extends StateNotifier<SplashState> {
 
       GetUserDetails getUserDetails = GetUserDetails(repository);
       (await getUserDetails(NoParam())).fold((l) {
-        state = NoLogin();
+        state = NotLoggedIn();
         // ref.read(localStorageProvider).clear();
         // ref.read(httpServiceProvider.state).state = HttpService(null);
       }, (r) {
@@ -58,7 +58,7 @@ class SplashNotifier extends StateNotifier<SplashState> {
       });
     } else {
       (await fetchToken(NoParam())).fold((l) {
-        state = NoLogin();
+        state = NotLoggedIn();
       }, (r) async {
         ref.read(httpServiceProvider.state).state = HttpService(r);
       });

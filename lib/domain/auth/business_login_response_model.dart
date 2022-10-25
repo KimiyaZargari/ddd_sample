@@ -1,8 +1,7 @@
-import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:ddd_sample/domain/auth/login_response_model.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'business_login_response_model.freezed.dart';
-
 part 'business_login_response_model.g.dart';
 
 @freezed

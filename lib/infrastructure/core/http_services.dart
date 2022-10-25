@@ -1,6 +1,5 @@
 import 'dart:convert';
 import 'dart:io';
-
 import 'package:dartz/dartz.dart';
 import 'package:ddd_sample/domain/core/enums.dart';
 import 'package:ddd_sample/infrastructure/core/api_routes.dart';
